@@ -27,6 +27,7 @@
 }
 -(IBAction)searchForWeather:(id)sender{
     if (_cityTxtF.text.length > 0) {
+        
         _indicatorView.hidden = NO;
         [self.indicatorView startAnimating];
         [[APIManager sharedInstance] getDataFromUrl:_cityTxtF.text withCallBack:^(BOOL isSuccess, NSDictionary *dict, NSError *error) {
@@ -42,7 +43,7 @@
                 [self.tableView reloadData];
                 
             }else{
-                [self showAlert:@"Downloading failed" withTitle:@"Failed"];
+                [self showAlert:@"Response failed" withTitle:@"Error"];
             }
         }];
     

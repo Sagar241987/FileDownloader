@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _imgView.layer.borderWidth = 1.0;
     _imgView.layer.borderColor = [UIColor grayColor].CGColor;
     _imgView.clipsToBounds = YES;
@@ -38,7 +39,7 @@
                 [self displayImage:url];
                 
             }else{
-                [self showAlert:@"Downloading failed" withTitle:@"Failed"];
+                [self showAlert:@"Downloading failed" withTitle:@"Error"];
             }
         }];
     }else{

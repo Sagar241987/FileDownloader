@@ -18,6 +18,8 @@
 		CEEF02E22075069F00773983 /* CAPSPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02E02075069F00773983 /* CAPSPageMenu.m */; };
 		CEEF02E52075075A00773983 /* WeatherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02E42075075A00773983 /* WeatherVC.m */; };
 		CEEF02E8207507D400773983 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02E7207507D400773983 /* MainVC.m */; };
+		CEEF02EB20750FEB00773983 /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02EA20750FEB00773983 /* WeatherCell.m */; };
+		CEEF02EF2075106F00773983 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02EE2075106F00773983 /* WeatherModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,10 @@
 		CEEF02E42075075A00773983 /* WeatherVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherVC.m; sourceTree = "<group>"; };
 		CEEF02E6207507D400773983 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
 		CEEF02E7207507D400773983 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		CEEF02E920750FEB00773983 /* WeatherCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
+		CEEF02EA20750FEB00773983 /* WeatherCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
+		CEEF02ED2075106F00773983 /* WeatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
+		CEEF02EE2075106F00773983 /* WeatherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		CEEF02C52074D35400773983 /* FileDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				CEEF02EC2075105900773983 /* Model */,
 				CEEF02DC2074D5B300773983 /* APIManager */,
 				CEEF02C62074D35400773983 /* AppDelegate.h */,
 				CEEF02C72074D35400773983 /* AppDelegate.m */,
@@ -101,6 +108,8 @@
 				CEEF02CA2074D35400773983 /* FileDownloaderVC.m */,
 				CEEF02E32075075A00773983 /* WeatherVC.h */,
 				CEEF02E42075075A00773983 /* WeatherVC.m */,
+				CEEF02E920750FEB00773983 /* WeatherCell.h */,
+				CEEF02EA20750FEB00773983 /* WeatherCell.m */,
 				CEEF02CC2074D35400773983 /* Main.storyboard */,
 				CEEF02CF2074D35400773983 /* Assets.xcassets */,
 				CEEF02D12074D35400773983 /* LaunchScreen.storyboard */,
@@ -121,6 +130,15 @@
 				CEEF02E7207507D400773983 /* MainVC.m */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		CEEF02EC2075105900773983 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF02ED2075106F00773983 /* WeatherModel.h */,
+				CEEF02EE2075106F00773983 /* WeatherModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEF02EB20750FEB00773983 /* WeatherCell.m in Sources */,
 				CEEF02DF2074D5FF00773983 /* APIManager.m in Sources */,
 				CEEF02E52075075A00773983 /* WeatherVC.m in Sources */,
+				CEEF02EF2075106F00773983 /* WeatherModel.m in Sources */,
 				CEEF02E8207507D400773983 /* MainVC.m in Sources */,
 				CEEF02CB2074D35400773983 /* FileDownloaderVC.m in Sources */,
 				CEEF02D62074D35400773983 /* main.m in Sources */,

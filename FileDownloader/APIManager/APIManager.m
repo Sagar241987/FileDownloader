@@ -8,6 +8,8 @@
 
 #import "APIManager.h"
 #import "AFNetworking.h"
+#define API_PATH @"http://api.openweathermap.org/data/2.5/weather?q="
+#define API_KEY @"54538b4b399b212a77523788f37bdf0a"
 @implementation APIManager
 + (instancetype)sharedInstance
 {
@@ -57,5 +59,16 @@
         
     }];
     [downloadTask resume];
+}
+-(void)getDataFromUrl:(NSString *)cityName withCallBack:(void (^)(BOOL isSuccess, NSDictionary *response, NSError *error))callBack{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:[NSString stringWithFormat:@"%@%@&appid=%@",API_PATH,cityName,API_KEY] parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        if ([responseObject isKindOfClass:[NSDictionary class]]) {
+            callBack(true, responseObject , nil);
+        }
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 @end

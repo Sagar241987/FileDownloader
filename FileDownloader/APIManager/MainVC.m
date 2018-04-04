@@ -9,31 +9,29 @@
 #import "MainVC.h"
 #import "CAPSPageMenu.h"
 #import "FileDownloaderVC.h"
-@interface MainVC ()
-
+#import "WeatherVC.h"
+@interface MainVC ()<CAPSPageMenuDelegate>
+@property (nonatomic) CAPSPageMenu *pageMenu;
 @end
 
 @implementation MainVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.navigationController.navigationBarHidden = YES;
     NSString * storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
-    _allVC = [storyboard instantiateViewControllerWithIdentifier:@"AllContactVC"];
-    _allVC.delegate = self;
-    _allVC.title = @"All";
+    FileDownloaderVC *fileDownloader = [storyboard instantiateViewControllerWithIdentifier:@"FileDownloaderVC"];
+    fileDownloader.title = @"File Downloader";
     
-    _recentVC  = [storyboard instantiateViewControllerWithIdentifier:@"RecentContactVC"];
-    _recentVC.title = @"Recent";
+    WeatherVC *weather  = [storyboard instantiateViewControllerWithIdentifier:@"WeatherVC"];
+    weather.title = @"Weather";
     
-    _groupVC  = [storyboard instantiateViewControllerWithIdentifier:@"GroupContactVC"];
-    _groupVC.title = @"Groups";
-    _groupVC.delegate = self;
-    NSArray *controllerArray;
+    
+    NSArray *controllerArray  = @[fileDownloader,weather];;
     NSDictionary *parameters;
-    if (_isContact) {
-        controllerArray  = @[_allVC,_groupVC];
+    
         parameters = @{
                        CAPSPageMenuOptionScrollMenuBackgroundColor: [UIColor clearColor],CAPSPageMenuOptionMenuItemSeparatorWidth: @(1.0),
                        CAPSPageMenuOptionMenuItemSeparatorColor: [UIColor colorWithRed:152.0/255.0f green:167.0/255.0f blue:180.0/255.0f alpha:1.0],
@@ -42,29 +40,13 @@
                        CAPSPageMenuOptionBottomMenuHairlineColor: [UIColor clearColor],
                        CAPSPageMenuOptionUnselectedMenuItemLabelColor:[UIColor colorWithRed:0.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:0.3],
                        CAPSPageMenuOptionSelectedMenuItemLabelColor:[UIColor colorWithRed:0.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:0.6],
-                       CAPSPageMenuOptionMenuItemFont: [UIFont fontWithName:FontBold size:13.0],
+                       CAPSPageMenuOptionMenuItemFont: [UIFont boldSystemFontOfSize:15.0],
                        CAPSPageMenuOptionMenuHeight: @(49.0),
                        
                        CAPSPageMenuOptionMenuItemWidth: @(self.view.frame.size.width/2 - 25),
                        CAPSPageMenuOptionCenterMenuItems: @(YES)
                        };
-    }else{
-        controllerArray  = @[_allVC,_recentVC,_groupVC];
-        parameters = @{
-                       CAPSPageMenuOptionScrollMenuBackgroundColor: [UIColor clearColor],CAPSPageMenuOptionMenuItemSeparatorWidth: @(1.0),
-                       CAPSPageMenuOptionMenuItemSeparatorColor: [UIColor colorWithRed:152.0/255.0f green:167.0/255.0f blue:180.0/255.0f alpha:1.0],
-                       CAPSPageMenuOptionViewBackgroundColor: [UIColor clearColor],
-                       CAPSPageMenuOptionSelectionIndicatorColor: [UIColor colorWithRed:5.0/255.0f green:102.0/255.0f blue:159.0/255.0f alpha:1.0],
-                       CAPSPageMenuOptionBottomMenuHairlineColor: [UIColor clearColor],
-                       CAPSPageMenuOptionUnselectedMenuItemLabelColor:[UIColor colorWithRed:0.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:0.3],
-                       CAPSPageMenuOptionSelectedMenuItemLabelColor:[UIColor colorWithRed:0.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:0.6],
-                       CAPSPageMenuOptionMenuItemFont: [UIFont fontWithName:FontBold size:13.0],
-                       CAPSPageMenuOptionMenuHeight: @(49.0),
-                       
-                       CAPSPageMenuOptionMenuItemWidth: @(self.view.frame.size.width/3 - 25),
-                       CAPSPageMenuOptionCenterMenuItems: @(YES)
-                       };
-    }
+    
     
     
     

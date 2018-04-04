@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		752DB81AB519B08D98B34825 /* libPods-FileDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A4D2F29D69B951914560EF /* libPods-FileDownloader.a */; };
+		CEEF02C82074D35400773983 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02C72074D35400773983 /* AppDelegate.m */; };
+		CEEF02CB2074D35400773983 /* FileDownloaderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02CA2074D35400773983 /* FileDownloaderVC.m */; };
+		CEEF02CE2074D35400773983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEF02CC2074D35400773983 /* Main.storyboard */; };
+		CEEF02D02074D35400773983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEF02CF2074D35400773983 /* Assets.xcassets */; };
+		CEEF02D32074D35400773983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEF02D12074D35400773983 /* LaunchScreen.storyboard */; };
+		CEEF02D62074D35400773983 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02D52074D35400773983 /* main.m */; };
+		CEEF02DF2074D5FF00773983 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02DE2074D5FF00773983 /* APIManager.m */; };
+		CEEF02E22075069F00773983 /* CAPSPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02E02075069F00773983 /* CAPSPageMenu.m */; };
+		CEEF02E52075075A00773983 /* WeatherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02E42075075A00773983 /* WeatherVC.m */; };
+		CEEF02E8207507D400773983 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEF02E7207507D400773983 /* MainVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0629A45254F21C2C3AC58CE2 /* Pods-FileDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-FileDownloader/Pods-FileDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		247F4FCEAD7C6B11A7307837 /* Pods-FileDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FileDownloader/Pods-FileDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		49A4D2F29D69B951914560EF /* libPods-FileDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FileDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF02C32074D35400773983 /* FileDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEF02C62074D35400773983 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEEF02C72074D35400773983 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEEF02C92074D35400773983 /* FileDownloaderVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloaderVC.h; sourceTree = "<group>"; };
+		CEEF02CA2074D35400773983 /* FileDownloaderVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloaderVC.m; sourceTree = "<group>"; };
+		CEEF02CD2074D35400773983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEEF02CF2074D35400773983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEEF02D22074D35400773983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEEF02D42074D35400773983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEF02D52074D35400773983 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEEF02DD2074D5FF00773983 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		CEEF02DE2074D5FF00773983 /* APIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		CEEF02E02075069F00773983 /* CAPSPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPSPageMenu.m; sourceTree = "<group>"; };
+		CEEF02E12075069F00773983 /* CAPSPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPSPageMenu.h; sourceTree = "<group>"; };
+		CEEF02E32075075A00773983 /* WeatherVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherVC.h; sourceTree = "<group>"; };
+		CEEF02E42075075A00773983 /* WeatherVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherVC.m; sourceTree = "<group>"; };
+		CEEF02E6207507D400773983 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		CEEF02E7207507D400773983 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEEF02C02074D35400773983 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752DB81AB519B08D98B34825 /* libPods-FileDownloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EEAFEC621C21AAEC114B0C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				247F4FCEAD7C6B11A7307837 /* Pods-FileDownloader.debug.xcconfig */,
+				0629A45254F21C2C3AC58CE2 /* Pods-FileDownloader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9049751A616E9F3CB0052780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49A4D2F29D69B951914560EF /* libPods-FileDownloader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEEF02BA2074D35400773983 = {
+			isa = PBXGroup;
+			children = (
+				CEEF02C52074D35400773983 /* FileDownloader */,
+				CEEF02C42074D35400773983 /* Products */,
+				5EEAFEC621C21AAEC114B0C3 /* Pods */,
+				9049751A616E9F3CB0052780 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEEF02C42074D35400773983 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF02C32074D35400773983 /* FileDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEF02C52074D35400773983 /* FileDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF02DC2074D5B300773983 /* APIManager */,
+				CEEF02C62074D35400773983 /* AppDelegate.h */,
+				CEEF02C72074D35400773983 /* AppDelegate.m */,
+				CEEF02C92074D35400773983 /* FileDownloaderVC.h */,
+				CEEF02CA2074D35400773983 /* FileDownloaderVC.m */,
+				CEEF02E32075075A00773983 /* WeatherVC.h */,
+				CEEF02E42075075A00773983 /* WeatherVC.m */,
+				CEEF02CC2074D35400773983 /* Main.storyboard */,
+				CEEF02CF2074D35400773983 /* Assets.xcassets */,
+				CEEF02D12074D35400773983 /* LaunchScreen.storyboard */,
+				CEEF02D42074D35400773983 /* Info.plist */,
+				CEEF02D52074D35400773983 /* main.m */,
+			);
+			path = FileDownloader;
+			sourceTree = "<group>";
+		};
+		CEEF02DC2074D5B300773983 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				CEEF02E12075069F00773983 /* CAPSPageMenu.h */,
+				CEEF02E02075069F00773983 /* CAPSPageMenu.m */,
+				CEEF02DD2074D5FF00773983 /* APIManager.h */,
+				CEEF02DE2074D5FF00773983 /* APIManager.m */,
+				CEEF02E6207507D400773983 /* MainVC.h */,
+				CEEF02E7207507D400773983 /* MainVC.m */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEEF02C22074D35400773983 /* FileDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEEF02D92074D35400773983 /* Build configuration list for PBXNativeTarget "FileDownloader" */;
+			buildPhases = (
+				6800F9E3AED77F6081306946 /* [CP] Check Pods Manifest.lock */,
+				CEEF02BF2074D35400773983 /* Sources */,
+				CEEF02C02074D35400773983 /* Frameworks */,
+				CEEF02C12074D35400773983 /* Resources */,
+				F6F914E9A75231EBDB0D1638 /* [CP] Embed Pods Frameworks */,
+				A314DE22C5A65EA78C768FE2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileDownloader;
+			productName = FileDownloader;
+			productReference = CEEF02C32074D35400773983 /* FileDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEEF02BB2074D35400773983 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = SagarGupta;
+				TargetAttributes = {
+					CEEF02C22074D35400773983 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CEEF02BE2074D35400773983 /* Build configuration list for PBXProject "FileDownloader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEEF02BA2074D35400773983;
+			productRefGroup = CEEF02C42074D35400773983 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEEF02C22074D35400773983 /* FileDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEEF02C12074D35400773983 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEF02D32074D35400773983 /* LaunchScreen.storyboard in Resources */,
+				CEEF02D02074D35400773983 /* Assets.xcassets in Resources */,
+				CEEF02CE2074D35400773983 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6800F9E3AED77F6081306946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A314DE22C5A65EA78C768FE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FileDownloader/Pods-FileDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F914E9A75231EBDB0D1638 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FileDownloader/Pods-FileDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEEF02BF2074D35400773983 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEF02DF2074D5FF00773983 /* APIManager.m in Sources */,
+				CEEF02E52075075A00773983 /* WeatherVC.m in Sources */,
+				CEEF02E8207507D400773983 /* MainVC.m in Sources */,
+				CEEF02CB2074D35400773983 /* FileDownloaderVC.m in Sources */,
+				CEEF02D62074D35400773983 /* main.m in Sources */,
+				CEEF02E22075069F00773983 /* CAPSPageMenu.m in Sources */,
+				CEEF02C82074D35400773983 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEEF02CC2074D35400773983 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEF02CD2074D35400773983 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEEF02D12074D35400773983 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEF02D22074D35400773983 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEEF02D72074D35400773983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEEF02D82074D35400773983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEEF02DA2074D35400773983 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247F4FCEAD7C6B11A7307837 /* Pods-FileDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FileDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.FileDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEEF02DB2074D35400773983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0629A45254F21C2C3AC58CE2 /* Pods-FileDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FileDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.FileDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEEF02BE2074D35400773983 /* Build configuration list for PBXProject "FileDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF02D72074D35400773983 /* Debug */,
+				CEEF02D82074D35400773983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEF02D92074D35400773983 /* Build configuration list for PBXNativeTarget "FileDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEF02DA2074D35400773983 /* Debug */,
+				CEEF02DB2074D35400773983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEEF02BB2074D35400773983 /* Project object */;
+}

@@ -82,6 +82,10 @@
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 
 @end
